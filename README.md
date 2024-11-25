@@ -140,5 +140,8 @@ Exibe informações sobre o filme, como sinopse, data de lançamento e direção
 - **Next.js**: Framework React para aplicações web, com suporte a renderização do lado do servidor.
 - **JSON**: Formato de armazenamento de dados utilizado para armazenar informações sobre os filmes.
 
-## Conclusão
+## Conclusão + Exemplo de funcionamento
+
+![image](https://github.com/user-attachments/assets/7a8d91d6-7a8c-4ed5-950f-83a7df6fa250)
+
 Este projeto POC6 demonstrou a viabilidade de um sistema de reserva de assentos para cinemas utilizando tecnologias modernas como React e Next.js. Através do uso de JSON para armazenamento de dados, conseguimos criar uma aplicação funcional que permite a seleção e compra de assentos, além de exibir informações detalhadas sobre os filmes. Essa implementação serve como uma base sólida para futuros desenvolvimentos e melhorias no sistema de reservas.
