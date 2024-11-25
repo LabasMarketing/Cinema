@@ -1,0 +1,271 @@
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #f0f0f0;
+    --foreground: #1a1a24;
+    --primary: #db3d2e;
+    --secondary: #bababa;
+    --button-text: #f0f0f0;
+    --available: #bababa;
+    --unavailable: #1a1a24;
+  }
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+  }
+
+  /* Alterando a ultima linha de assentos */
+  .last-row {
+    position: absolute;
+    left: 40%;
+  }
+
+  .legend-item {
+  }
+  .button {
+    background-color: var(--primary);
+    color: var(--button-text);
+  }
+
+  .available {
+    color: var(--available);
+  }
+
+  .unavailable {
+    color: var(--unavailable);
+  }
+
+  .container {
+    background-color: var(--background);
+    color: var(--foreground);
+  }
+  .seat.free {
+    background-color: var(--available);
+  }
+  .seat.selected {
+    background-color: var(--primary);
+  }
+  .seat.unavailable {
+    background-color: var(--unavailable);
+    cursor: not-allowed;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1a1a24;
+    --foreground: #f0f0f0;
+    --primary: #cd4a3e;
+    --secondary: #505050;
+    --button-text: #f0f0f0;
+    --available: #f0f0f0;
+    --unavailable: #505050;
+  }
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+  }
+
+  .button {
+    background-color: var(--primary);
+    color: var(--button-text);
+  }
+
+  .available {
+    color: var(--available);
+  }
+
+  .unavailable {
+    color: var(--unavailable);
+  }
+
+  /* Outros estilos específicos para o modo escuro */
+  .container {
+    background-color: var(--background);
+    color: var(--foreground);
+  }
+  .seat.free {
+    background-color: var(--available);
+  }
+  .seat.selected {
+    background-color: var(--primary);
+  }
+  .seat.unavailable {
+    background-color: var(--unavailable);
+    cursor: not-allowed;
+  }
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 35%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: 80%;
+  width: 60%; /*  coloca mais ou menos no centro  */
+  text-align: center;
+  flex-direction: row;
+}
+
+.left-section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-size: 2em;
+  font-weight: bold;
+}
+.time {
+  font-size: 1.2em;
+  margin-bottom: 1.25em;
+}
+.synopsis,
+.details {
+  text-align: left;
+  margin: 0;
+  top: auto;
+}
+.synopsis h3,
+.details h3 {
+  font-size: 1em;
+  font-weight: bold;
+}
+.seats {
+  display: grid;
+  grid-template-columns: repeat(8, 30px); /* 8 colunas de 30px cada */
+  gap: 10px;
+  justify-content: center;
+  margin: 1.25em 0;
+  align-items: center;
+  justify-items: center;
+}
+
+.seat {
+  width: 1.875em;
+  height: 1.875em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.screen {
+  background-color: #4a4a4a;
+  width: 240px;
+  height: 1.25em;
+  margin: 0.625em auto;
+  border-radius: 5px;
+}
+.screen-label {
+  margin-top: 0.3em;
+  font-size: 0.8em;
+}
+.legend {
+  display: flex;
+  justify-content: center;
+  gap: 1.25em;
+  margin: 1.25em 0;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.legend-item span {
+  width: 1em;
+  height: 1em;
+  border-radius: 3px;
+}
+
+/* Essas 3 seleções são para mudar as características quadrados ao lado da palavra: 
+livre, selecionado e indisponível, respectivamente */
+.legend-item .free {
+  background-color: #ffffff;
+  border-radius: 50px;
+}
+.legend-item .selected {
+  background-color: #e63946;
+  border-radius: 50px;
+}
+.legend-item .unavailable {
+  background-color: #050505;
+  border-radius: 50px;
+}
+.buy-button {
+  background-color: #e63946;
+  color: #ffffff;
+  border: none;
+  padding: 1em 1.875em;
+  border-radius: 0.625em;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+.buy-button:hover {
+  background-color: #d62828;
+}
+@media (prefers-color-scheme: light) {
+  /* background - F0F0F0
+Foreground - 1A1A24
+Primary - DB3D2E
+Secondary - BABABA
+Button text - F0F0F0
+Available - BABABA
+Unavailable - 1A1A24*/
+}
+@media (prefere-color-screen: dark) {
+  /* background - 1A1A24
+Foreground - F0F0F0
+Primary - CD4A3E
+Secondary - 505050
+Button text - F0F0F0
+Available - F0F0F0
+Unavailable - 505050*/
+}
+
+/* Media queries para responsividade */
+@media print, (max-width: 1000px) {
+  /* Corrigindo a forma da consulta de mídia */
+  .container {
+    flex-direction: column;
+    gap: 1.25em;
+    align-items: center;
+  }
+
+  .right-section {
+    display: none;
+  }
+
+  .seats {
+    grid-template-columns: repeat(8, 30px);
+  }
+
+  .title {
+    font-size: 1.5em;
+  }
+
+  .time {
+    font-size: 1em;
+  }
+
+  .synopsis h3,
+  .details h3 {
+    font-size: 0.9em;
+  }
+}
