@@ -1,4 +1,4 @@
-# POC6
+# Cinema
 
 ### Alunos
 - Gustavo Carvalho
