@@ -1,14 +1,14 @@
-# Cinema
+# 🎬Cinema
 
-### Alunos
+### 👨‍🎓Alunos
 - Gustavo Carvalho
 - Gabriel Labarca
 - Rodrygo
 
-## Objetivo
+## 🎯Objetivo
 O objetivo desta POC (Prova de Conceito) é desenvolver um sistema de reserva de assentos para cinemas, utilizando as tecnologias React e Next.js, com dados armazenados em um arquivo JSON. O sistema permite a seleção, desmarcação e compra de assentos, além de exibir informações sobre o filme.
 
-## Funcionalidades
+## 🛠️Funcionalidades
 
 ### Seleção de Assentos
 O usuário pode selecionar e desmarcar assentos para reserva. Cada assento tem um status que pode ser:
@@ -16,16 +16,16 @@ O usuário pode selecionar e desmarcar assentos para reserva. Cada assento tem u
 - Selecionado (selected)
 - Indisponível (unavailable)
 
-### Preços
+### 💰Preços
 O preço de cada assento é fixado em R$ 25,00. O valor total da reserva é atualizado à medida que o usuário seleciona ou desmarque assentos.
 
-### Assentos Indisponíveis
+### 🚫Assentos Indisponíveis
 O sistema marca automaticamente 8 pares consecutivos de assentos como "indisponíveis" ao carregar a página. Isso é feito de forma aleatória.
 
-### Finalização da Compra
+### 🛒Finalização da Compra
 Quando o usuário clica no botão "Comprar", um alerta exibe o valor total da compra, ou uma mensagem caso nenhum assento tenha sido selecionado.
 
-## Estrutura do Código
+## 📂Estrutura do Código
 
 ### 1. Importações
 ```javascript
@@ -135,10 +135,10 @@ Exibindo dados do filme:
 ```
 Exibe informações sobre o filme, como sinopse, data de lançamento e direção, que são carregadas do arquivo exemplo.json.
 
-## Ferramentas Utilizadas
-- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
-- **Next.js**: Framework React para aplicações web, com suporte a renderização do lado do servidor.
-- **JSON**: Formato de armazenamento de dados utilizado para armazenar informações sobre os filmes.
+## 🧰Ferramentas Utilizadas
+- ⚛️**React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- 🚀**Next.js**: Framework React para aplicações web, com suporte a renderização do lado do servidor.
+- 📄**JSON**: Formato de armazenamento de dados utilizado para armazenar informações sobre os filmes.
 
 ## Conclusão + Exemplo de funcionamento
 
